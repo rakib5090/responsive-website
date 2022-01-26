@@ -1,0 +1,143 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;1,400&family=Rasa&display=swap');
+
+/*common styles or utilities*/
+body{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Rasa', serif;
+}
+#heading{
+    font-weight: 700;
+    font-size: 2em;
+    margin-left: 50px;
+    transition: width 1s , height 1s, transform 1s ease-in-out;
+}
+#heading:hover{
+    background: white;
+    color: #E02C6D;
+    transform: rotate(360deg);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+    margin-right: 15px;
+}
+nav a:hover{
+    background: white;
+    color: #E02C6D;
+}
+h1{
+    font-size: 50px;
+}
+.half-width{
+    width: 40%;
+    padding-left: 5%;
+}
+.vertical-setup{
+    display: flex;
+    margin-bottom: 80px;
+}
+.half-width img{
+    width: 70%;
+    padding-left: 10px;
+    padding-top: 20px;
+}
+.link-button{
+    text-decoration: none;
+    background-color: #E02C6D;
+    padding: 10px 40px;
+    color: white;
+    font-weight: 700;
+    border-radius: 30px;
+}
+.link-button:hover{
+    cursor: pointer;
+}
+.logo-container{
+    padding-left: 22%;
+    padding-right: 22%;
+}
+.section-title{
+    text-align: center;
+}
+
+.gaps{
+    margin-bottom: 100px;
+}
+
+/* Item Styles */
+
+.items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+}
+.item{
+    box-shadow: 2px 2px 2px 2px gray;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 300px;
+    height: 450px;
+}
+.item .item-banner{
+    width: 300px;
+    height: 256px;
+    border-radius: 5px;
+}
+.item-review{
+    padding-left: 10px;
+}
+.filled{
+    color: goldenrod;
+    font-size: 0.8em;
+}
+.empty{
+    color: lightgray;
+    font-size: 0.8em;
+}
+p{
+    margin: 0;
+}
+.more{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    direction: rtl;
+}
+.color-ful{
+    color: purple;
+}
+.footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+/* Media Quaries */
+
+/* ------for phone------ */
+
+@media only screen and (max-width:688px) {
+    .vertical-setup{
+        width: 100%;
+    }
+    .items{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+/* ------for tab----- */
+@media only screen and (min-width:689px) and (max-width:992px) {
+    .vertical-setup{
+        width: 100%;
+    }
+    .items{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
